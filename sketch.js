@@ -67,7 +67,7 @@ function setup() {
 function draw() {
   background(56,44,44); 
  
-  //Engine.update(engine);
+  Engine.update(engine);
   //text(mouseX + ',' + mouseY, 10, 15);
   textSize(20);
   fill("lightyellow");
@@ -124,6 +124,6 @@ function mouseReleased(){
 }
 function keyPressed(){
   if(keyCode === 32){
-      slingShot.attach(ball.body);
+      slingShot.attach(this.ball);
   }
 }
